@@ -7,7 +7,7 @@ Project: F-Cirosantilli. Or other projects related to china-dictatorship (no cod
 
 
 # 简介（Introduce）
-一个净化github社区的油猴脚本。  
+一个净化github社区搜索页面的油猴脚本。你可以在搜索页面屏蔽那些你不愿意看到的文章或发布人。  
 
 拒绝垃圾库污染github，github是分享代码的社区，不是你单纯输出政治观点的垃圾桶。你可以在代码里加入你的政治观点，但不能全是政治没有一点代码。  
 

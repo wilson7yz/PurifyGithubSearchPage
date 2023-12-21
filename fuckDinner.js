@@ -4,7 +4,7 @@
 // @version      2023-12-21
 // @description  try to take over the world!
 // @author       You
-// @match        *://*/*
+// @match        *://github.com/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // @run-at       document-idle

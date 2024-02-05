@@ -78,7 +78,7 @@ const dinnerNames = ["cirosantilli", "cheezcharmer","pxvr-official","zaohmeing",
     });
 
     // 开始观察整个文档的变化
-    observer.observe(document.body, { childList: true, subtree: true });
+    observer.observe(document.body, { childList: true, subtree: true }); //fix by ximalaya22
 
 
 //     fuckDinner();

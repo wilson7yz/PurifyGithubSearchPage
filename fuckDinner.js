@@ -69,33 +69,46 @@ const dinnerNames = ["cirosantilli", "cheezcharmer","pxvr-official","zaohmeing",
 
     }
 
-    fuckDinner();
-    // // 事件委托到 document 上
-    // document.addEventListener('click', function(event) {
-    //     if (event.target.matches('a.Pagination__Page-sc-cp45c9-0.jOoUXg')) {
-    //         // alert("hello");
-    //         fuckDinner();
-    //     }
-    // });
-
-
-    // 添加点击事件监听器
-    document.addEventListener('click', function(event) {
-        if (event.target.matches('a.Pagination__Page-sc-cp45c9-0.jOoUXg')) {
-            console.log("click: a.Pagination__Page-sc-cp45c9-0.jOoUXg");
-            // 等待特定元素加载完毕
-            // 定时检查页面中是否出现了指定元素
-            var intervalId = setInterval(function() {
-                console.log("hi");
-                var targetElement = document.querySelector('a.Pagination__Page-sc-cp45c9-0.jOoUXg');
-                if (targetElement) {
-                    console.log("hello");
-                    fuckDinner();
-                    clearInterval(intervalId); // 当找到元素后停止定时器
-                }
-            }, 500); // 每隔一秒检查一次
-        }
+    const observer = new MutationObserver(mutations => {
+        mutations.forEach(mutation => {
+            if (mutation.addedNodes.length) {
+                fuckDinner();
+            }
+        });
     });
+
+    // 开始观察整个文档的变化
+    observer.observe(document.body, { childList: true, subtree: true });
+
+
+//     fuckDinner();
+//     // // 事件委托到 document 上
+//     // document.addEventListener('click', function(event) {
+//     //     if (event.target.matches('a.Pagination__Page-sc-cp45c9-0.jOoUXg')) {
+//     //         // alert("hello");
+//     //         fuckDinner();
+//     //     }
+//     // });
+
+
+//     // 添加点击事件监听器
+//     document.addEventListener('click', function(event) {
+//         if (event.target.matches('a.Pagination__Page-sc-cp45c9-0.jOoUXg')) {
+//             console.log("click: a.Pagination__Page-sc-cp45c9-0.jOoUXg");
+//             // 等待特定元素加载完毕
+//             // 定时检查页面中是否出现了指定元素
+//             var intervalId = setInterval(function() {
+//                 console.log("hi");
+//                 var targetElement = document.querySelector('a.Pagination__Page-sc-cp45c9-0.jOoUXg');
+//                 if (targetElement) {
+//                     console.log("hello");
+//                     fuckDinner();
+//                     clearInterval(intervalId); // 当找到元素后停止定时器
+//                 }
+//             }, 500); // 每隔一秒检查一次
+//         }
+//     });
+
 
 
 })();

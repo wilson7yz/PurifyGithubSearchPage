@@ -32,7 +32,7 @@ Create a new script directly in Oil Monkey, then copy and paste the content of t
 另外给个建议，我们都是coder，最烦的就是看别人的注释，更别提你这100000字的小论文了，还他妈不排版。下一次分散一点好不好？？？学习下人家bbc怎么发文章的，言简意赅。
 
 # 更新计划
-无，最多更新狗比名单。这是小号，不常看issue。  
+无，有问题找issue。  
 
 
 # 感谢名单
